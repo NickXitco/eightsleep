@@ -1,0 +1,218 @@
+.sleep-interval {
+    width: 20%;
+    height: 100%;
+    border-radius: 10px;
+    background: #071f18;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.intervals-container {
+    width: 100%;
+    height: 100%;
+    padding: 25px;
+    box-sizing: border-box;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+h3 {
+    font-weight: 200;
+    font-size: 30px;
+    font-family: "aktiv-grotesk-thin", sans-serif;
+    margin: 0 0 0.25em;
+}
+
+.inner-graph {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.bar-shade {
+    background: linear-gradient(0deg, black, rgba(0, 0, 0, 0) 50%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.bars {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    border-radius: 10px;
+    pointer-events: none;
+}
+
+.bar {
+    pointer-events: auto;
+    position: relative;
+}
+
+.bar-color {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    position: absolute;
+
+    transition: all 0.5s ease;
+}
+
+.bar-color-darker {
+    opacity: 0.33;
+}
+
+.bar-hover {
+    box-shadow: inset #01011c 0 0 20px 5px;
+    transition: all 0.25s ease;
+}
+
+.bar-no-hover {
+    box-shadow: inset #01011c 0 0 0 0;
+    transition: all 0.25s ease;
+}
+
+.stage-tooltip {
+    background: rgba(0, 0, 0, 0.75);
+    pointer-events: none;
+    width: 175px;
+
+    position: absolute;
+    z-index: 2;
+
+    padding: 10px;
+
+    transition: all 0.25s ease;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.bar-tooltip {
+    margin-left: 100%;
+}
+
+.tooltip-align-right {
+    margin-left: -175px;
+    text-align: right;
+}
+
+.bar-tooltip-stage {
+    text-transform: uppercase;
+    color: #808080;
+    font-size: 10px;
+}
+
+.bar-tooltip-time {
+    white-space: nowrap;
+}
+
+.timescale {
+    position: relative;
+    height: 30px;
+}
+
+.timescale-tick {
+    position: absolute;
+    font-weight: 200;
+    font-size: 60px;
+
+    display: flex;
+    align-items: flex-end;
+
+    height: 30px;
+}
+
+.graph {
+    position: relative;
+}
+
+.svg-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    pointer-events: none;
+}
+
+.custom-tooltip {
+    display: flex;
+    flex-direction: column;
+    border: white solid thin;
+    border-radius: 0.5em;
+    box-shadow: white 0 0 3px 0;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 1em 1em 0.5em;
+}
+
+.tooltip-time {
+    color: #808080;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.tooltip-value {
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.tooltip-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5em;
+}
+
+.tooltip-value-container {
+    display: flex;
+    margin: 0.5em 0;
+    align-items: flex-end;
+}
+
+
+.tnt-tick {
+    background: white;
+    width: 2px;
+    height: 100%;
+    pointer-events: auto;
+    position: absolute;
+}
+
+.tnt-hover {
+    background: cyan;
+    box-shadow: #00bbff 0 0 5px 0;
+    transition: all 0.5s ease;
+}
+
+.tnt-no-hover {
+    box-shadow: white 0 0 5px 0;
+    transition: all 0.5s ease;
+}
+
+.tnt-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+    overflow: hidden;
+
+    opacity: 1;
+    transition: all 0.25s ease;
+}
+
+.tnt-container-hide {
+    opacity: 0;
+}
+
+.tnt-container-hide * {
+    pointer-events: none;
+}
