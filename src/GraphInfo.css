@@ -149,7 +149,38 @@ p b {
     border: #1862ff 10px solid;
     align-items: center;
     border-radius: 50%;
+
+    transition: all ease 0.5s;
 }
+
+@media screen and (max-height: 1060px){
+    .stat-wheel {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-height: 900px) {
+    .stat-wheel {
+        display: none;
+    }
+}
+
+@media screen and (max-height: 750px) {
+    .stat-wheel-container {
+        display: none;
+    }
+}
+
+@media screen and (max-height: 700px) {
+    .fitness-container {
+        display: none;
+    }
+    .graph-select-container {
+        padding-top: 25px;
+    }
+}
+
 
 .bed-time {
     text-align: right;
@@ -249,9 +280,10 @@ h5 {
 
 
 .tnt-select-container {
-    padding: 25px;
-    display: flex;
     align-items: flex-end;
+    display: flex;
+    padding: 0 25px;
+    margin-bottom: 25px;
 }
 
 .tnt-select-container h3 {
@@ -260,7 +292,9 @@ h5 {
 }
 
 .graph-select-container {
-    padding: 25px;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-bottom: 25px;
 }
 
 .graph-selectors {
