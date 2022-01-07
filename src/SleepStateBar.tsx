@@ -1,5 +1,5 @@
 import React from 'react';
-import './GraphContent.css';
+import './stylesheets/GraphContent.css';
 import {SLEEP_STATES} from "./App";
 import {SleepStage} from "./Content";
 import {toTimeString} from "./GraphInfo";

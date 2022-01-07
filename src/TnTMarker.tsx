@@ -1,5 +1,5 @@
 import React from 'react';
-import './GraphContent.css';
+import './stylesheets/GraphContent.css';
 import {toTimeString} from "./GraphInfo";
 
 type TnTMarkerProps = {

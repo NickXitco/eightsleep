@@ -1,5 +1,5 @@
 import React from 'react';
-import './GraphContent.css';
+import './stylesheets/GraphContent.css';
 import {Checkbox, cToF, SleepInterval, TimeSeries} from "./Content";
 import {Area, AreaChart, ResponsiveContainer, Tooltip, TooltipProps, XAxis, YAxis} from 'recharts';
 import {NameType, ValueType} from "recharts/types/component/DefaultTooltipContent";

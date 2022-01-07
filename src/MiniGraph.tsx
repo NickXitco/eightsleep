@@ -1,5 +1,5 @@
 import React from 'react';
-import './GraphInfo.css';
+import './stylesheets/GraphInfo.css';
 import {TimeSeries} from "./Content";
 import {Line, LineChart, ResponsiveContainer, YAxis} from "recharts";
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './stylesheets/App.css';
 import {Header} from './Header';
 import {Content} from "./Content";
 import AliceHeadshot from './headshots/alice_headshot.png';

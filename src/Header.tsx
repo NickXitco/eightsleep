@@ -1,6 +1,6 @@
 import React from 'react';
 import { houseIcon } from './App';
-import './Header.css';
+import './stylesheets/Header.css';
 import {fToC} from "./Content";
 
 type Profile = {

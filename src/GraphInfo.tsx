@@ -1,5 +1,5 @@
 import React from 'react';
-import './GraphInfo.css';
+import './stylesheets/GraphInfo.css';
 import {adjustDay, captitalize, Checkbox, getDay, SleepInterval} from "./Content";
 import { FitnessContainer } from './FitnessContainer';
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import './GraphInfo.css';
+import './stylesheets/GraphInfo.css';
 import {cToF, SleepInterval, TimeSeries} from "./Content";
 import { MiniGraph } from './MiniGraph';
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import './Content.css';
+import './stylesheets/Content.css';
 import {adjustDay, captitalize, getDay, SleepInterval} from "./Content";
 
 type SleepSessionBubbleProps = {

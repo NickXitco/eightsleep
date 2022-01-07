@@ -1,5 +1,5 @@
 import React from 'react';
-import './Content.css';
+import './stylesheets/Content.css';
 import {GraphContent} from "./GraphContent";
 import { GraphInfo } from './GraphInfo';
 import {SleepSessionBubble} from "./SleepSessionBubble";
